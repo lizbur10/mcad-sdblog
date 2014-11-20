@@ -1,0 +1,10 @@
+.css-module {
+    margin-bottom: 6em;
+    &> h2 {
+    font-family: monospace;
+    background-color: #ddd;
+    padding: .5em;
+    border-top: 2px dashed #333;
+    border-bottom: 1px dotted #555;
+  }
+}
