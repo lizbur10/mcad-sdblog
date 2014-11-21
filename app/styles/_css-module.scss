@@ -1,0 +1,17 @@
+.css-module {
+    margin-bottom: 6em;
+    &> h2 {
+      font-family: monospace;
+      background-color: $gray-lighter;
+      padding: .5em;
+    }
+
+    .sample-image {
+      display: block;
+      border: 1px solid $gray-lighter;
+    }
+
+    &> *:last-child {
+      border: 1px solid $gray-lighter;
+    }
+}
