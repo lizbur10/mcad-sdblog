@@ -1,0 +1,26 @@
+.utility-nav {
+  font-size: .75em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  ul {
+    @include clearfix;
+    list-style-type: none;
+    padding-left: 1.5em;
+  }
+  li {
+    float: left;
+    border-left: 2px solid $gray-light;
+    padding: 0 .5em;
+    font-weight: bold;
+    img {
+      opacity: 0.4;
+      float: right;
+      padding: 0 1.8em 0 .9em;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $gray;
+  }
+}
