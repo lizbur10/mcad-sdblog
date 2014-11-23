@@ -1,0 +1,10 @@
+.social-media {
+  @include clearfix;
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    display: inline-block;
+    float: left;
+    padding: .35em;
+  }
+}

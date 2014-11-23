@@ -1,8 +1,37 @@
 .article-block {
   width: 38%;
   height: 20em;
+  position: relative;
   img {
     z-index: -10;
     max-width: none;
   }
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  h2 {
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    font-size: 1.75em;
+  }
+
+  .category {
+    position: absolute;
+    top: .25em;
+    left: 1em;
+    font-size: .9em;
+  }
+
+  time {
+    position: absolute;
+    top: 1.25em;
+    right: 1em;
+    font-size: .9em;
+  }
+}
+.biomimicry {
+  background: linear-gradient(rgba(234, 0, 148, .8), rgba(234, 0, 148, 0));
 }
