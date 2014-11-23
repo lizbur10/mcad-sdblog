@@ -10,6 +10,7 @@
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -64,10 +65,15 @@
   <div class="css-module">
     <h2>.utility-nav</h2>
     <img class="sample-image" src="images/modules/utility-nav.jpg" alt="Utility Links">
-    <nav>
-      <ul class="utility-nav">
-        <li><a href="#">Request a brochure</a></li>
-        <li><a href="#">mcad.edu/sustainable</a></li>
+
+    <nav class="utility-nav">
+      <ul>
+        <li><a href="#"><img src="images/sdo_broch.png" alt="brochure image">
+          Request a<br>
+          brochure</a>
+        </li>
+        <li><a href="#">mcad.edu/<br>
+          sustainable</a></li>
       </ul>
     </nav>
   </div>
@@ -76,11 +82,11 @@
   <div class="css-module">
     <h2>.article-block</h2>
     <img class="sample-image" src="images/modules/article-block.jpg" alt="Article Block">
-    <article class="article-block">
+    <article class="article-block biomimicry">
       <a href="#">
-        <h2>Sustainability Bucket List</h2>
-        <p class="category">Natural Leadership</p>
-        <time datetime="2014-07-09">Jul 9, 2014</time>
+        <h2>Design Rules for Sustainability</h2>
+        <p class="category">Biomimicry</p>
+        <time datetime="2014-02-20">Feb 20, 2014</time>
         <p><img src="images/BuckyRulesC11-550x317.jpg" alt="Bucky rules"></p>
       </a>
     </article>
@@ -91,10 +97,10 @@
     <h2>.social-media</h2>
     <img class="sample-image" src="images/modules/social-media.jpg" alt="Social Media">
     <ul class="social-media">
-      <li>Facebook</li>
-      <li>Twitter</li>
-      <li>Pinterest</li>
-      <li>LinkedIn</li>
+      <li><i class="fa fa-facebook"><span class="visuallyhidden">Facebook</span></i></li>
+      <li><i class="fa fa-twitter"><span class="visuallyhidden">Twitter</span></i></li>
+      <li><i class="fa fa-pinterest"><span class="visuallyhidden">Pinterest</span></i></li>
+      <li><i class="fa fa-linkedin"><span class="visuallyhidden">LinkedIn</span></i></li>
     </ul>
   </div>
 
@@ -106,10 +112,10 @@
     <footer class="page-footer">
       <p>Minneapolis College of Art and Design &copy; 2014</p>
       <ul class="social-media">
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>Pinterest</li>
-        <li>LinkedIn</li>
+        <li><i class="fa fa-facebook"><span class="visuallyhidden">Facebook</span></i></li>
+        <li><i class="fa fa-twitter"><span class="visuallyhidden">Twitter</span></i></li>
+        <li><i class="fa fa-pinterest"><span class="visuallyhidden">Pinterest</span></i></li>
+        <li><i class="fa fa-linkedin"><span class="visuallyhidden">LinkedIn</span></i></li>
       </ul>
     </footer>
   </div>
@@ -127,7 +133,11 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="bower_components/eventie/eventie.js"></script>
+    <script src="bower_components/imagesloaded/imagesloaded.js"></script>
     <!-- endbower -->
+    <script src="bower_components/imagefill/js/jquery-imagefill.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
