@@ -1,6 +1,8 @@
 .article-block {
+  float: left;
   height: 19em;
   position: relative;
+  margin: .5em;
   img {
     z-index: -10;
     max-width: none;
@@ -43,6 +45,8 @@
     right: 1em;
     font-size: .9em;
   }
+
+//Color definitions for article block gradient and hover state
 
   &.about-the-ma-program {
     @include colorset($color-about-the-ma-program,

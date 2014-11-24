@@ -13,6 +13,17 @@ body {
   margin: 4em auto;
 }
 
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+
+.nav-back {
+  @include clearfix;
+  margin-left: .5em;
+}
+
 
 .browsehappy {
   margin: 0.2em 0;
