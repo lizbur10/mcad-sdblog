@@ -9,8 +9,9 @@ body {
   background: $white;
   font-family: $font-stack;
   color: $black;
-  max-width: 60em;
-  margin: 4em auto;
+  max-width: 1200 / 16 * 1em;
+  margin: 3em auto;
+  padding: 0 3em;
 }
 
 a {
@@ -21,7 +22,9 @@ a {
 
 .nav-back {
   @include clearfix;
-  margin-left: .5em;
+  padding-right: .5em;
+  border-right: 1px solid blue;
+  margin-bottom: 3em;
 }
 
 

@@ -1,8 +1,9 @@
 .page-footer {
+  border-top: 1px solid $gray-light;
   p {
     font-size: .8em;
     margin: 0;
-    padding: 0 .25rem;
+    padding-top: 1em;
   }
 
   .social-media {
