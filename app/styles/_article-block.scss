@@ -10,16 +10,10 @@
 
   &.small {
     width: 24%;
-    .category {
-      max-width: 7em;
-    }
   }
 
   &.medium {
     width: 32%;
-    .category {
-      max-width: 10em;
-    }
   }
 
   &.large {
@@ -42,6 +36,7 @@
     margin: 1em;
     margin-bottom: 0;
     font-size: .9em;
+    max-width: 50%;
   }
 
   time {
