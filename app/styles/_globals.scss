@@ -9,8 +9,22 @@ body {
   background: $white;
   font-family: $font-stack;
   color: $black;
-  max-width: 60em;
-  margin: 4em auto;
+  max-width: 1200 / 16 * 1em;
+  margin: 3em auto;
+  padding: 0 3em;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+
+.nav-back {
+  @include clearfix;
+  padding-right: .5em;
+  border-right: 1px solid blue;
+  margin-bottom: 3em;
 }
 
 
