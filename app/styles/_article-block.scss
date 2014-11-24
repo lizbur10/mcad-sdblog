@@ -7,7 +7,7 @@
   }
 
   &.small {
-    width: 28%;
+    width: 29%;
   }
 
   &.medium {
@@ -24,19 +24,17 @@
   }
 
   h2 {
-    position: absolute;
-    top: .5em;
-    left: .5em;
+    margin: 0 .5em;
     font-size: 1.75em;
     letter-spacing: 1px;
     line-height: 1;
   }
 
   .category {
-    position: absolute;
-    top: .25em;
-    left: 1em;
+    margin: 1em;
+    margin-bottom: 0;
     font-size: .9em;
+    max-width: 10em;
   }
 
   time {
