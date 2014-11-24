@@ -1,11 +1,23 @@
 .article-block {
-  width: 38%;
   height: 19em;
   position: relative;
   img {
     z-index: -10;
     max-width: none;
   }
+
+  &.small {
+    width: 30%;
+  }
+
+  &.medium {
+    width: 38%;
+  }
+
+  &.large {
+    width: 58%;
+  }
+  
   a {
     text-decoration: none;
     color: $white;
