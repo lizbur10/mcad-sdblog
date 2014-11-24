@@ -7,7 +7,7 @@
   }
 
   &.small {
-    width: 30%;
+    width: 28%;
   }
 
   &.medium {
@@ -15,9 +15,9 @@
   }
 
   &.large {
-    width: 58%;
+    width: 56%;
   }
-  
+
   a {
     text-decoration: none;
     color: $white;
@@ -29,6 +29,7 @@
     left: .5em;
     font-size: 1.75em;
     letter-spacing: 1px;
+    line-height: 1;
   }
 
   .category {
@@ -44,38 +45,39 @@
     right: 1em;
     font-size: .9em;
   }
-}
-.about-the-ma-program {
-  @include colorset($color-about-the-ma-program,
-  $color-start-about-the-ma-program,$color-end-about-the-ma-program)
-}
 
-.biomimicry {
-  @include colorset($color-biomimicry,
-  $color-start-biomimicry,$color-end-biomimicry)
-}
+  &.about-the-ma-program {
+    @include colorset($color-about-the-ma-program,
+    $color-start-about-the-ma-program,$color-end-about-the-ma-program)
+  }
 
-.eco-careers {
-  @include colorset($color-eco-careers,
-  $color-start-eco-careers,$color-end-eco-careers)
-}
+  &.biomimicry {
+    @include colorset($color-biomimicry,
+    $color-start-biomimicry,$color-end-biomimicry)
+  }
 
-.green-biz {
-  @include colorset($color-green-biz,
-  $color-start-green-biz,$color-end-green-biz)
-}
+  &.eco-careers {
+    @include colorset($color-eco-careers,
+    $color-start-eco-careers,$color-end-eco-careers)
+  }
 
-.green-graphic-packaging {
-  @include colorset($color-green-graphic-packaging,
-  $color-start-green-graphic-packaging,$color-end-green-graphic-packaging)
-}
+  &.green-biz {
+    @include colorset($color-green-biz,
+    $color-start-green-biz,$color-end-green-biz)
+  }
 
-.innovation-entrepreneurship {
-  @include colorset($color-innovation-entrepreneurship,
-  $color-start-innovation-entrepreneurship,$color-end-innovation-entrepreneurship)
-}
+  &.green-graphic-packaging {
+    @include colorset($color-green-graphic-packaging,
+    $color-start-green-graphic-packaging,$color-end-green-graphic-packaging)
+  }
 
-.natural-leadership {
-  @include colorset($color-natural-leadership,
-  $color-start-natural-leadership,$color-end-natural-leadership)
+  &.innovation-entrepreneurship {
+    @include colorset($color-innovation-entrepreneurship,
+    $color-start-innovation-entrepreneurship,$color-end-innovation-entrepreneurship)
+  }
+
+  &.natural-leadership {
+    @include colorset($color-natural-leadership,
+    $color-start-natural-leadership,$color-end-natural-leadership)
+  }
 }
