@@ -1,29 +1,40 @@
 .article-block {
-  width: 38%;
   height: 19em;
   position: relative;
   img {
     z-index: -10;
     max-width: none;
   }
+
+  &.small {
+    width: 29%;
+  }
+
+  &.medium {
+    width: 38%;
+  }
+
+  &.large {
+    width: 56%;
+  }
+
   a {
     text-decoration: none;
     color: $white;
   }
 
   h2 {
-    position: absolute;
-    top: .5em;
-    left: .5em;
+    margin: 0 .5em;
     font-size: 1.75em;
     letter-spacing: 1px;
+    line-height: 1;
   }
 
   .category {
-    position: absolute;
-    top: .25em;
-    left: 1em;
+    margin: 1em;
+    margin-bottom: 0;
     font-size: .9em;
+    max-width: 10em;
   }
 
   time {
@@ -32,7 +43,39 @@
     right: 1em;
     font-size: .9em;
   }
-}
-.biomimicry {
-  background: linear-gradient(rgba(234, 0, 148, .7), rgba(234, 0, 148, 0));
+
+  &.about-the-ma-program {
+    @include colorset($color-about-the-ma-program,
+    $color-start-about-the-ma-program,$color-end-about-the-ma-program)
+  }
+
+  &.biomimicry {
+    @include colorset($color-biomimicry,
+    $color-start-biomimicry,$color-end-biomimicry)
+  }
+
+  &.eco-careers {
+    @include colorset($color-eco-careers,
+    $color-start-eco-careers,$color-end-eco-careers)
+  }
+
+  &.green-biz {
+    @include colorset($color-green-biz,
+    $color-start-green-biz,$color-end-green-biz)
+  }
+
+  &.green-graphic-packaging {
+    @include colorset($color-green-graphic-packaging,
+    $color-start-green-graphic-packaging,$color-end-green-graphic-packaging)
+  }
+
+  &.innovation-entrepreneurship {
+    @include colorset($color-innovation-entrepreneurship,
+    $color-start-innovation-entrepreneurship,$color-end-innovation-entrepreneurship)
+  }
+
+  &.natural-leadership {
+    @include colorset($color-natural-leadership,
+    $color-start-natural-leadership,$color-end-natural-leadership)
+  }
 }

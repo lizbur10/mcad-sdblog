@@ -16,3 +16,13 @@
   display: table;
   clear: both;
 }
+
+@mixin colorset($category-color,$gradient-start,$gradient-end) {
+  background: -webkit-linear-gradient(top,$gradient-start,$gradient-end); /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom,$gradient-start,$gradient-end); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom,$gradient-start,$gradient-end); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom,$gradient-start,$gradient-end); /*Standard*/
+  &:hover {
+    background: $category-color;
+  }
+}
